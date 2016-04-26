@@ -26,8 +26,10 @@ class Complex:
         if self.re == 0:
             if self.im == 0:
                 return null
-            else:
+            elif self.im > 0:
                 return 3.1415926535*0.5
+	    else:
+	    	return -3.1415926535*0.5
         else:
             return math.atan2(self.im, self.re)
 
