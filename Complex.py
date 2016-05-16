@@ -45,13 +45,13 @@ class Complex:
     # * のオーバーロード
     def __mul__(self,other):
         return Complex(self.re*other.re-self.im*other.im, self.re*other.im+self.im*other.re)
-
+#テスト
 if __name__ == '__main__':
-	a =Complex(1,-2)
-	print a
-	print a.get_abs()
-	print a.get_arg()
+	a =Complex(1,-2) #インスタンス生成
+	print a #文字列化
+	print a.get_abs() #絶対値の取得
+	print a.get_arg() #偏角の取得
 	b = Complex(5,3)
-	print a+b
-	print a-b
-	print a*b
+	print a+b # +演算子
+	print a-b # -演算子
+	print a*b # *演算子
